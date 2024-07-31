@@ -1,0 +1,23 @@
+concepts to look out are
+
+-> date types their sizes, ranges & default values 
+
+-> cool exceptions : 
+
+  1. boolean don't have a defined sizes
+  2. characters use unicode &  range starts from 0 so it takes 2 bytes. unlike
+     in other program langs like c, c++ it will take 1 byte & use ASCII
+  3. use javap cmd to find the min, max values of a type & you can also use bytes for getting sizes
+
+-> learn about variables & their naming rules 
+
+-> quick rules check 
+
+  1. can't have same names inside a same method. 
+  2. can't have a keyword name.
+  3. consists of only alpha, num, _ , $.
+  4. name can't start with a number.
+  5. can't have a class name if class is also in use.
+  6. good practice is to follow camelCase.
+  7. no limit on length of name.
+    

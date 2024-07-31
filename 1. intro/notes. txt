@@ -1,0 +1,7 @@
+well things to look out for are
+
+packages -> java.lang.* & java.util.*
+
+for keyboard input we use Scanner Object & it had different methods to get inputs of different types.
+
+then next using this concepts i was supposed to write a program to get input from keyboard.
