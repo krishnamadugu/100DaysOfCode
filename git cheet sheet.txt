@@ -39,6 +39,13 @@ branching ::
                                  so what ever changes you make it will go to that branch..
 
 
+<<<<<<< HEAD
+=======
+=> git merge "name" -> will merge the branch you mentioned to the current branch you are in
+
+
+
+>>>>>>> day1
 
 
 
