@@ -24,6 +24,22 @@ stashing :: is a concept where our changes were maintained at back stage they wi
 => git stash clear -> will clear all the changes in back stage and all the changes are just gone. 
 
 
+hosting on a platform :: ( github ) 
+
+=> create a repo on github and get the url 
+=> commit all your changes you want to push 
+=> git remote add origin "url..," this will add the origin url to your directory
+=> git remote -v -> this will provide the available versions of the url ( fetch, push )
+=> git push origin main( branch_name ) -> this will push your changes to the platform so it's like your live..
+
+branching :: 
+
+=> git branch "name" -> this will create a new branch for your current working repos
+=> git checkout "branch_name" -> this will change your current working directory's branch to it 
+                                 so what ever changes you make it will go to that branch..
+
+
+
 
 
 
