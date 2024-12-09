@@ -37,21 +37,52 @@ branching ::
 => git branch "name" -> this will create a new branch for your current working repos
 => git checkout "branch_name" -> this will change your current working directory's branch to it 
                                  so what ever changes you make it will go to that branch..
-
-
 => git merge "name" -> will merge the branch you mentioned to the current branch you are in
+=> git push origin --delete "branch name" -> this will delete your branch but it should not be default one. 
+=> forking a repository will get your own copy of the code and you will get to make the changes locally.
 
 
+pull request , merging & all ::
+
+=> first you fork the project do the changes locally and push to your current repo
+=> then you create an upstream for the original repo and raise a PR with your copy repo
+=> then after reviewing of your code and many changes your changes will be merged to the original repo
 
 
+=> git clone "url...." will help you to download the repo locally 
+=> git remote add upstream "urlll....." -> this will add the upstream url ( original repo )
 
 
+note :: once you created a PR and you commit again without closing that pr then new commit will also be 
+        added to the same PR and having a single PR for multiple commits is also not considered as healthy 
+        so considering all this i want you to maintain your commit msgs and PR's to be more readable & 
+        meaning ful at the same time never ever push your code changes directly into main branch
+
+below two commands will make your current copy repo even with original repo when it had changes ::
+
+=> git fetch --all --prune -> this cmd will fetch all the changes to your current branch including your own 
+                              remote repo & upstream repo 
+
+=> git reset --hard upstream/main -> this will reset my repos current branch with upstreams main branch
+
+squashing :: ( comibining the commits together )
+
+there are 2 ways to do this 
+
+=> using git log you can reset to the last commit you want to have and the rest of the commits above it 
+   will automatically added to staging and you can commit those by adding them back again to staging .
+
+=> git rebase -i ( commit_id you got from git log ) this will help you to show all the commits above the 
+   commit id you mentioned and there are two commands that will be visible one is pick and other options 
+   and you will have squash option inside them 
 
 
+=> so using that squash option and exiting that interactive viewer by saving it your commit msgs will be 
+   combined.. 
 
 
+resolving merge conflict :: 
 
-
-
+when same line of code had changes from multiple persons then a conflict will be created 
 
 
