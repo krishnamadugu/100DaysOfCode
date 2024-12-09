@@ -19,6 +19,7 @@ stashing :: is a concept where our changes were maintained at back stage they wi
 
 => git add . -> you first add them to staging 
 => git stash -> you add the changes to stashing and your working tree will be clean again
+=> git stash list -> Shows all of the changes in the stash
 => git stash pop -> will get the changes from back stage to working tree
 => git stash clear -> will clear all the changes in back stage and all the changes are just gone. 
 
