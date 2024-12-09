@@ -1,0 +1,36 @@
+git cheet sheet :: 
+
+
+=> git init -> initializes git repos which stores history of changes and its belongings 
+=> gid add filename -> adds particular file to staging 
+=> git add . -> adds all the unstaged files to staging 
+=> git status -> gives the status of current repository 
+=> git commit -m "...." -> commits the file changes to repository with the message 
+
+
+
+=> git log -> will give the log file for the current repository 
+=> git restore logId -> git log will give you id and using this cmd you can go back to that state of your 
+   project but all the stages did after that commit will be deleted and will stay back at unstaged again
+
+
+stashing :: is a concept where our changes were maintained at back stage they will not be shown in either 
+            working tree or history and you can get them back to working tree when ever you want 
+
+=> git add . -> you first add them to staging 
+=> git stash -> you add the changes to stashing and your working tree will be clean again
+=> git stash pop -> will get the changes from back stage to working tree
+=> git stash clear -> will clear all the changes in back stage and all the changes are just gone. 
+
+
+
+
+
+
+
+
+
+
+
+
+
